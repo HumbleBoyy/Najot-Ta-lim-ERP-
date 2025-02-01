@@ -1,19 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MainLogo } from '../../assets/logos'
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Form, Input } from 'antd';
-
+import { Context } from '../../Context/Context'
+import getUsers from '../../service/getUsers';
 const Login = () => {
   const [form] = Form.useForm();
+  const {setToken} = useContext(Context)
   const [clientReady, setClientReady] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
+  const allUsers = getUsers("/users")
 
-  // To disable submit button at the beginning.
+ console.log(allUsers)
   useEffect(() => {
     setClientReady(true);
   }, []);
-  const onFinish = (values) => {
-    console.log('Finish:', values);
+
+
+  const handleSubmit = (data) => {
+    setIsLoading(true) 
+    const isUser = allUsers.some(item => item.username === data.username && item.password === data.password)
+    
+    if(isUser){
+      setTimeout(()=> {
+        setToken(data)
+      },1000)
+      
+    }
+    setTimeout(()=> {
+      setIsLoading(false)  
+      
+      },500)
   };
+
+  
 
   return (
     <div className='flex justify-center flex-col items-center main_color h-[100vh]'>
@@ -21,7 +41,7 @@ const Login = () => {
         Logo
         <h2 className='text-[30px] font-meduim text-black'>Admin Panel</h2>
       </div>
-      <Form autoComplete='off' form={form} className='flex flex-col gap-3 w-[360px]' layout="inline" onFinish={onFinish}>
+      <Form autoComplete='off' form={form} className='flex flex-col gap-3 w-[360px]' layout="inline" onFinish={handleSubmit}>
       <Form.Item
         name="username"
         rules={[
@@ -56,6 +76,7 @@ const Login = () => {
               !form.isFieldsTouched(true) ||
               !!form.getFieldsError().filter(({ errors }) => errors.length).length
             }
+            loading={isLoading}
           >
             Kirish
           </Button>

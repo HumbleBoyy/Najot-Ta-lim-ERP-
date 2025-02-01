@@ -1,13 +1,16 @@
-import React from 'react'
-import Login from './Pages/Login/Login'
-import LoginRoutes from './routes/Registiration'
+import React, { useContext } from 'react'
+import LoginRoutes from './routes/Register'
+import DashBoardRoutes from './routes/Dashboard'
+import { Context } from './Context/Context'
 
 const App = () => {
-  return (
-    <div>
-      <LoginRoutes/>
-    </div>
-  )
+const {token} = useContext(Context)
+   if(token){
+      return <DashBoardRoutes/>
+   }
+     else{
+      return <LoginRoutes/>
+     }
 }
 
 export default App
