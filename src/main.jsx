@@ -7,8 +7,8 @@ import { GlobalContext } from './Context/Context.jsx'
 
 createRoot(document.getElementById('root')).render(
    <BrowserRouter>
-    <GlobalContext>
-       <App />
-    </GlobalContext>
+      <GlobalContext>
+         <App />
+      </GlobalContext>
    </BrowserRouter>
 )

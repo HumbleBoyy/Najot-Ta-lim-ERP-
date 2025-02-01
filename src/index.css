@@ -1,4 +1,5 @@
 @import "tailwindcss";
+ 
 
 @font-face {
     font-display: swap;
@@ -23,3 +24,30 @@
     font-weight: 700;
     src: url('./assets/fonts/poppins-v22-latin-700.woff2') format('woff2'); 
   }
+:root{
+  --main_color:#bc8e5b;
+  --bg_register-color:#fff8f0ea;
+}
+*{
+    font-family: "Poppins";
+}
+
+.main_color {
+  color: var(--main_color);
+  background-color: var(--bg_register-color);
+}
+.ant-btn-primary{
+  background-color: var(--main_color);
+}
+.ant-btn-primary:hover{
+  background-color: #d6b48ef3 !important;
+}
+.ant-input-affix-wrapper:hover{
+  border-color: var(--main_color) !important;
+}
+.ant-input-affix-wrapper-focused{
+  border-color: var(--main_color) !important;
+}
+.ant-input-outlined:focus-within{
+  box-shadow: 0 0 0 2px #bc8f5b71;
+}
