@@ -2,7 +2,7 @@ import React from 'react'
 import { PATH } from './usePath'
 import { Groups, Home, Market, Students, Teachers } from '../Pages/Dashboard'
 
-export const DashboardRoutesList = () => [
+export const dashboardRoutesList = [
     {
         id:1,
         path:PATH.home,
