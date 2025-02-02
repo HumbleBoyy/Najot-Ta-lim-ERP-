@@ -3,14 +3,14 @@ import { useLocation } from 'react-router-dom'
 import { MainLogo } from '../assets/logos'
 import { dashboardRoutesList } from '../hooks/useRoutes'
 import { BellOutlined, InfoCircleOutlined, LogoutOutlined, MenuFoldOutlined } from '@ant-design/icons'
-import { Badge, Button, Modal } from 'antd'
+import { Badge, Button, Modal, Tooltip } from 'antd'
 import { useContext } from 'react'
 import { Context } from '../Context/Context'
 const Header = () => {
     const path = useLocation()
     const {setToken} = useContext(Context)
     const [logOut, setLogOut] = useState(false)
-    
+
     const handleLogout = () => {
       setToken(null)
     }
@@ -23,7 +23,9 @@ const Header = () => {
        <div className='w-[80%] flex items-center justify-between px-[10px]'>
           <span className='text-white'><MenuFoldOutlined className='text-[25px] cursor-pointer'/></span>
            <div className='flex items-center gap-5'>
-              <Button size='middle' iconPosition='left'><InfoCircleOutlined /> Sinxronlash</Button>
+             <Tooltip placement="bottom" title={"So'nggu yangilanish 30s oldin"}>
+               <Button size='middle' iconPosition='left'><InfoCircleOutlined /> Sinxronlash</Button>
+             </Tooltip>
               <Badge count={5} size='default'>
               <Button size='middle' iconPosition='left'><BellOutlined /></Button>
               </Badge>
