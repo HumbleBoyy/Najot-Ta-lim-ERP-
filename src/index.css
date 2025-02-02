@@ -34,6 +34,12 @@
 
 .main_color {
   color: var(--main_color);
+}
+.ant-btn:hover {
+  color: var(--main_color) !important;
+  border-color: var(--main_color) !important;
+}
+.Login_color {
   background-color: var(--bg_register-color);
 }
 .ant-btn-primary{

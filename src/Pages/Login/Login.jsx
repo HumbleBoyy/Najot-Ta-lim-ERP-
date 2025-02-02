@@ -49,8 +49,8 @@ const Login = () => {
       position="top-center"
       reverseOrder={false}
     />
-    <div className='flex justify-center flex-col items-center main_color h-[100vh]'>
-      <div className='flex items-center gap-2 mb-5'>
+    <div className='flex justify-center flex-col items-center Login_color  h-[100vh]'>
+      <div className='flex items-center gap-2 main_color  mb-5'>
         <MainLogo/>
         <h2 className='text-[30px] font-meduim text-black'>Admin Panel</h2>
       </div>
