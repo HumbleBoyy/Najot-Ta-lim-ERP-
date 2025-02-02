@@ -57,3 +57,22 @@
 .ant-input-outlined:focus-within{
   box-shadow: 0 0 0 2px #bc8f5b71;
 }
+
+
+
+::-webkit-scrollbar {
+	width: 5px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c1c1c1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
