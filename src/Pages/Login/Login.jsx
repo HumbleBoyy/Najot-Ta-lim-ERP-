@@ -3,13 +3,14 @@ import { MainLogo } from '../../assets/logos'
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Form, Input } from 'antd';
 import { Context } from '../../Context/Context'
-import getUsers from '../../service/getUsers';
+import toast, { Toaster } from 'react-hot-toast';
+import getRequest from '../../service/getRequest';
 const Login = () => {
   const [form] = Form.useForm();
   const {setToken} = useContext(Context)
   const [clientReady, setClientReady] = useState(false);
   const [isLoading, setIsLoading] = useState(false)
-  const allUsers = getUsers("/users")
+  const allUsers = getRequest("/users")
 
  console.log(allUsers)
   useEffect(() => {
@@ -21,24 +22,36 @@ const Login = () => {
     setIsLoading(true) 
     const isUser = allUsers.some(item => item.username === data.username && item.password === data.password)
     
-    if(isUser){
-      setTimeout(()=> {
+     setTimeout(()=> {
+      if(isUser){
+        toast.success(`Xush Kelibsiz ${data.username}`)
+      }
+
+     },500)
+     setTimeout(()=> {
+      if(isUser){
+        setIsLoading(false)
         setToken(data)
-      },1000)
-      
-    }
-    setTimeout(()=> {
-      setIsLoading(false)  
-      
-      },500)
-  };
+      }else{
+        toast.error("Foydalanuvchi topilmadi!")
+        setIsLoading(false)
+        data.target.reset();
+      }
+     },1000)
+    
+}
 
   
 
   return (
+    <>
+     <Toaster
+      position="top-center"
+      reverseOrder={false}
+    />
     <div className='flex justify-center flex-col items-center main_color h-[100vh]'>
       <div className='flex items-center gap-2 mb-5'>
-        Logo
+        <MainLogo/>
         <h2 className='text-[30px] font-meduim text-black'>Admin Panel</h2>
       </div>
       <Form autoComplete='off' form={form} className='flex flex-col gap-3 w-[360px]' layout="inline" onFinish={handleSubmit}>
@@ -62,7 +75,7 @@ const Login = () => {
           },
         ]}
       >
-        <Input size='large' prefix={<LockOutlined />}  type="password" placeholder="Parol"/>
+        <Input.Password size='large' prefix={<LockOutlined />}  type="password" placeholder="Parol"/>
       </Form.Item>
       <Form.Item shouldUpdate>
         {() => (
@@ -84,6 +97,8 @@ const Login = () => {
       </Form.Item>
     </Form>
     </div>
+    </>
+   
   )
 }
 
