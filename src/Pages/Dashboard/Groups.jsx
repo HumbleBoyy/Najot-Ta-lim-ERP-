@@ -1,9 +1,10 @@
 import React from 'react'
+import Caption from '../../Components/Caption'
 
 const Groups = () => {
   return (
     <div>
-      Groups
+      <Caption/>
     </div>
   )
 }

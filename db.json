@@ -4,5 +4,178 @@
             "username":"Asadulloh",
             "password":"123456"
         }
+    ],
+    "categories":[
+       {
+          "id":1,
+          "title":"Asosiy",
+          "path":"/"
+       },
+       {
+        "id":2,
+        "title":"Ustozlor",
+        "path":"/teachers"
+       },
+       {
+        "id":3,
+        "title":"O'quvchilar",
+        "path":"/students"
+       },
+       {
+        "id":4,
+        "title":"Do'kon",
+        "path":"/market"
+       },
+       {
+        "id":5,
+        "title":"Guruhlar",
+        "path":"/groups"
+       }
+    ], 
+    "teachers": [
+        {
+            "id":1,
+            "name":"Asadulloh",
+            "surname":"Abdurakhmonov",
+            "age":21,
+            "stack":"Frontend developer",
+            "region":"Andijon",
+            "status":"Asosy Ustoz",
+            "experience":"2 yil",
+            "gender":"Male",
+            "email":"asadullohsemail@gmail.com",
+            "phoneNumber":"+998942360036",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":2,
+            "name":"John",
+            "surname":"Jerry",
+            "age":20,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":3,
+            "name":"Johny",
+            "surname":"Jerry",
+            "age":220,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":4,
+            "name":"John",
+            "surname":"Jerry",
+            "age":20,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":5,
+            "name":"John",
+            "surname":"Jerry",
+            "age":20,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":6,
+            "name":"John",
+            "surname":"Jerry",
+            "age":20,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":7,
+            "name":"John",
+            "surname":"Jerry",
+            "age":20,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        },
+        {
+            "id":8,
+            "name":"John",
+            "surname":"Jerry",
+            "age":20,
+            "stack":"Backend developer",
+            "region":"New York",
+            "status":"Yordamchi ustoz",
+            "experience":"1 yil",
+            "gender":"Male",
+            "email":"johnemail@gmail.com",
+            "phoneNumber":"+998942160616",
+            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+        }
+    ],
+    "stack":[
+        {
+            "id":"1",
+            "name":"Frontend"
+        },
+        {
+            "id":"2",
+            "name":"Backend"
+        },
+        {
+            "id":"3",
+            "name":"Full stack"
+        },
+        {
+            "id":"4",
+            "name":"Graphic design"
+        },
+        {
+            "id":"5",
+            "name":"Flutter"
+        },
+        {
+            "id":"6",
+            "name":"SMM"
+        },
+        {
+            "id":"7",
+            "name":"Java"
+        }
     ]
+        
+    
 }

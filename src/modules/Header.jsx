@@ -2,26 +2,25 @@ import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { MainLogo } from '../assets/logos'
 import { dashboardRoutesList } from '../hooks/useRoutes'
-import { BellOutlined, InfoCircleOutlined, LogoutOutlined, MenuFoldOutlined } from '@ant-design/icons'
+import { BellOutlined, InfoCircleOutlined, LogoutOutlined, MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons'
 import { Badge, Button, Modal, Tooltip } from 'antd'
 import { useContext } from 'react'
 import { Context } from '../Context/Context'
 const Header = () => {
     const path = useLocation()
-    const {setToken} = useContext(Context)
+    const {setToken, setOpenMenu, openMenu} = useContext(Context)
     const [logOut, setLogOut] = useState(false)
-
     const handleLogout = () => {
       setToken(null)
     }
   return (
     <div className='flex items-center justify-between bg-[#01152a]'>
-       <div className='w-[20%] main_color flex items-center p-4 gap-5'>
+       <div className={`${openMenu ? "w-[90px]" : "w-[20%]"} main_color flex items-center p-4 gap-5`}>
          <MainLogo/>
-         <h2 className='text-white text-[20px]'>{dashboardRoutesList.map(item => path.pathname === item.path && item.title)}</h2>
+         {openMenu ? null : <h2 className='text-white text-[20px]'>{dashboardRoutesList.map(item => path.pathname === item.path && item.title)}</h2>}
        </div>
-       <div className='w-[80%] flex items-center justify-between px-[10px]'>
-          <span className='text-white'><MenuFoldOutlined className='text-[25px] cursor-pointer'/></span>
+       <div className={`${openMenu ? "w-full" : "w-[80%]"}  flex items-center justify-between px-[10px]`}>
+          <button className='text-white' onClick={()=> setOpenMenu(!openMenu)}>{openMenu ?  <MenuUnfoldOutlined className='text-[25px] cursor-pointer' /> : <MenuFoldOutlined className='text-[25px] cursor-pointer'/>}</button>
            <div className='flex items-center gap-5'>
              <Tooltip placement="bottom" title={"So'nggu yangilanish 30s oldin"}>
                <Button size='middle' iconPosition='left'><InfoCircleOutlined /> Sinxronlash</Button>
@@ -36,7 +35,7 @@ const Header = () => {
            </div>
        </div>
        <Modal open={logOut} onCancel={()=> setLogOut(false)} onOk={handleLogout} title="Chiqish">
-          <p>Tizimdan chiqishni xoxlaysizmi?</p>
+          <p className='text-[17px]'>Tizimdan chiqishni xoxlaysizmi?</p>
        </Modal>
     </div>
   )
