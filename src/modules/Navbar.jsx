@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Menu } from 'antd'
-import { dashboardRoutesList } from '../hooks/useRoutes'
+import { navbarRoutesList } from '../hooks/useRoutes'
 import { Link } from 'react-router-dom'
 import { Context } from '../Context/Context'
 
@@ -15,7 +15,7 @@ const Navbar = () => {
         theme="dark"
         className='h-full !p-1'
         inlineCollapsed={openMenu}
-        items={dashboardRoutesList.map(item => {
+        items={navbarRoutesList.map(item => {
            const data = {
               key:item.id,
               icon:item.icon,

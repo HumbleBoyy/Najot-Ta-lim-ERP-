@@ -34,117 +34,44 @@
     ], 
     "teachers": [
         {
-            "id":1,
+            "id":"1",
             "name":"Asadulloh",
-            "surname":"Abdurakhmonov",
+            "surName":"Abdurakhmonov",
             "age":21,
             "stack":"Frontend developer",
+            "stackId":"1",
             "region":"Andijon",
-            "status":"Asosy Ustoz",
+            "regionId":"1",
+            "district":"Izboskan",
+            "status":"Asosiy Ustoz",
+            "statusId":"2",
             "experience":"2 yil",
             "gender":"Male",
+            "isMerried":false,
             "email":"asadullohsemail@gmail.com",
-            "phoneNumber":"+998942360036",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+            "phone":"+998942360036",
+            "workedCompany":["Asadullohs LLC", "Najot Ta'lim"]
         },
         {
-            "id":2,
-            "name":"John",
-            "surname":"Jerry",
+            "id":"2",
+            "name":"Akmal",
+            "surname":"Teshayev",
             "age":20,
             "stack":"Backend developer",
-            "region":"New York",
+            "stackId":"2",
+            "region":"Sirdaryo",
+            "regionId":"5",
+            "district":"Guliston",
             "status":"Yordamchi ustoz",
+            "statusId":"3",
             "experience":"1 yil",
             "gender":"Male",
+            "isMerried":false,
             "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
-        },
-        {
-            "id":3,
-            "name":"Johny",
-            "surname":"Jerry",
-            "age":220,
-            "stack":"Backend developer",
-            "region":"New York",
-            "status":"Yordamchi ustoz",
-            "experience":"1 yil",
-            "gender":"Male",
-            "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
-        },
-        {
-            "id":4,
-            "name":"John",
-            "surname":"Jerry",
-            "age":20,
-            "stack":"Backend developer",
-            "region":"New York",
-            "status":"Yordamchi ustoz",
-            "experience":"1 yil",
-            "gender":"Male",
-            "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
-        },
-        {
-            "id":5,
-            "name":"John",
-            "surname":"Jerry",
-            "age":20,
-            "stack":"Backend developer",
-            "region":"New York",
-            "status":"Yordamchi ustoz",
-            "experience":"1 yil",
-            "gender":"Male",
-            "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
-        },
-        {
-            "id":6,
-            "name":"John",
-            "surname":"Jerry",
-            "age":20,
-            "stack":"Backend developer",
-            "region":"New York",
-            "status":"Yordamchi ustoz",
-            "experience":"1 yil",
-            "gender":"Male",
-            "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
-        },
-        {
-            "id":7,
-            "name":"John",
-            "surname":"Jerry",
-            "age":20,
-            "stack":"Backend developer",
-            "region":"New York",
-            "status":"Yordamchi ustoz",
-            "experience":"1 yil",
-            "gender":"Male",
-            "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
-        },
-        {
-            "id":8,
-            "name":"John",
-            "surname":"Jerry",
-            "age":20,
-            "stack":"Backend developer",
-            "region":"New York",
-            "status":"Yordamchi ustoz",
-            "experience":"1 yil",
-            "gender":"Male",
-            "email":"johnemail@gmail.com",
-            "phoneNumber":"+998942160616",
-            "workedCompony":["Asadullohs LLC", "Najot Ta'lim"]
+            "phone":"+998942160616",
+            "workedCompany":["Asadullohs LLC", "Najot Ta'lim"]
         }
+    
     ],
     "stack":[
         {
@@ -175,7 +102,113 @@
             "id":"7",
             "name":"Java"
         }
+    ],
+    "regions":[
+        {
+            "id":"1",
+            "name":"Andijon"
+        },
+        {
+            "id":"2",
+            "name":"Farg'ona"
+        },
+        {
+            "id":"3",
+            "name":"Namangan"
+        },
+        {
+            "id":"4",
+            "name":"Toshkent"
+        },
+        {
+            "id":"5",
+            "name":"Sirdaryo"
+        },
+        {
+            "id":"6",
+            "name":"Jizzax"
+        },
+        {
+            "id":"7",
+            "name":"Navoi"
+        },
+        {
+            "id":"8",
+            "name":"Samarqand"
+        },
+        {
+            "id":"9",
+            "name":"Buxoro"
+        },
+        {
+            "id":"10",
+            "name":"Qashqadaryo"
+        },
+        {
+            "id":"11",
+            "name":"Surxondaryo"
+        },
+        {
+            "id":"12",
+            "name":"Xorazm"
+        },
+        {
+            "id":"13",
+            "name":"Qoraqalpag'iston"
+        }
+    ],
+    "status":[
+        {
+            "id":"1",
+            "name":"Bosh Ustoz"
+        },
+        {
+            "id":"2",
+            "name":"Asosiy Ustoz"
+        },
+        {
+            "id":"3",
+            "name":"Yordamchi Ustoz"
+        }
+    ],
+    "companiesList":[
+        {
+            "id":"1",
+            "name":"Google"
+        },
+        {
+            "id":"2",
+            "name":"Meta"
+        },
+        {
+            "id":"3",
+            "name":"Twitter"
+        },  
+        {
+            "id":"4",
+            "name":"Telegram"
+        },
+        {
+            "id":"5",
+            "name":"Amazon"
+        },
+        {
+            "id":"6",
+            "name":"Master Card"
+        },
+        {
+            "id":"7",
+            "name":"Tesla"
+        },
+        {
+            "id":"8",
+            "name":"Microsoft"
+        },
+        {
+            "id":"9",
+            "name":"Visa"
+        }
     ]
-        
     
+     
 }

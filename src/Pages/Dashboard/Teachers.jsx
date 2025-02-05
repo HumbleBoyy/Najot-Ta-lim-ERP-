@@ -1,10 +1,11 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Caption from '../../Components/Caption'
-import { Input, Modal } from 'antd'
-import FilterStack from  '../../Components/FilterStack';
+import { Input } from 'antd'
 import { instance } from '../../hooks/instance';
 import CustomTable from '../../Components/CustomTable';
 import { MoreOutlined, QuestionOutlined } from '@ant-design/icons';
+import { PATH } from '../../hooks/usePath';
+import FilterCustom from '../../Components/FilterCustom';
 
 const Teachers = () => {
   const [stackId, setStackId] = useState(null)
@@ -30,7 +31,9 @@ const Teachers = () => {
  }
 
   useEffect(()=> {
-      instance().get("/teachers").then(res => {
+      instance().get("/teachers", {
+        params:{stackId}
+      }).then(res => {
           setTeachers( res.data.map((item, index) => {
             item.key = index
             item.name = item.name ? item.name : <QuestionOutlined />
@@ -41,7 +44,7 @@ const Teachers = () => {
             return item
           }))
       })
-  },[refresh])
+  },[refresh, stackId])
 
   const columns = [
     {
@@ -72,7 +75,7 @@ const Teachers = () => {
   return (
    <>
     <div className={`p-5`}>
-     <Caption/>
+     <Caption addLink={PATH.teachersAdd}/>
      <div className='flex gap-2 mt-2'>
         <label className='flex flex-col'>
           <span className='text-[15px] text-slate-400'>Qidirish</span>
@@ -80,15 +83,12 @@ const Teachers = () => {
         </label>
         <label className='flex flex-col'>
           <span className='text-[15px] text-slate-400'>Kasbni Tanlang</span>
-           <FilterStack stackId={stackId} setStackId={setStackId}/>
+          <FilterCustom API={"/stack"} filterId={stackId} setFilterId={setStackId}  placeholder={"Kasbga ko'ra tanlang"}/>
         </label>
      </div>
 
      <CustomTable isLoading={isLoading} columns={columns} dataSource={teachers}/>
     </div>
-    <Modal open={action} onCancel={()=> setAction(false)} title="Batafsil">
-    <p className='text-[17px]'>Amalni tanlang</p>
-   </Modal>
    </>
   )
 }

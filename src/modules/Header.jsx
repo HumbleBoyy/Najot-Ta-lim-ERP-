@@ -17,7 +17,7 @@ const Header = () => {
     <div className='flex items-center justify-between bg-[#01152a]'>
        <div className={`${openMenu ? "w-[90px]" : "w-[20%]"} main_color flex items-center p-4 gap-5`}>
          <MainLogo/>
-         {openMenu ? null : <h2 className='text-white text-[20px]'>{dashboardRoutesList.map(item => path.pathname === item.path && item.title)}</h2>}
+         {openMenu ? null : <h2 className='text-white text-[20px]'>{dashboardRoutesList.map(item => path.pathname === item.path ? "Najot Ta'lim" : item.title)}</h2>}
        </div>
        <div className={`${openMenu ? "w-full" : "w-[80%]"}  flex items-center justify-between px-[10px]`}>
           <button className='text-white' onClick={()=> setOpenMenu(!openMenu)}>{openMenu ?  <MenuUnfoldOutlined className='text-[25px] cursor-pointer' /> : <MenuFoldOutlined className='text-[25px] cursor-pointer'/>}</button>

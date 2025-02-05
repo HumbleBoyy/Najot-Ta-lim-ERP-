@@ -8,9 +8,9 @@ const DashBoardLayout = ({children}) => {
   return (
     <>
     <Header/>
-      <div className='flex justify-between'>
+      <div className='flex'>
        <Navbar/>
-       <div className={`${openMenu ? "w-[3500px]" : "w-[80%]"} h-[100vh] overflow-y-auto`}>
+       <div className={`${openMenu ? "w-[3500px]" : "w-[80%]"} duration-300 h-[100vh] overflow-y-auto`}>
           {children}
        </div>
     </div>

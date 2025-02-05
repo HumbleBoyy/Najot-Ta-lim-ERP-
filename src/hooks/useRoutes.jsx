@@ -1,9 +1,9 @@
 import React from 'react'
 import { PATH } from './usePath'
-import { Groups, Home, Market, Students, Teachers } from '../Pages/Dashboard'
+import { Groups, Home, Market, Students, Teachers, TeachersCrud } from '../Pages/Dashboard'
 import { DeploymentUnitOutlined, HomeOutlined, ShoppingCartOutlined, TeamOutlined, UserAddOutlined, UsergroupAddOutlined } from '@ant-design/icons'
 
-export const dashboardRoutesList = [
+export const navbarRoutesList = [
     {
         id:1,
         path:PATH.home,
@@ -38,6 +38,39 @@ export const dashboardRoutesList = [
         element:<Market/>,
         title:"Do'kon",
         icon:<ShoppingCartOutlined className='!text-[25px]'/>
+    }
+   
+]
+export const dashboardRoutesList = [
+    {
+        id:1,
+        path:PATH.home,
+        element:<Home/>,
+    },
+    {
+        id:2,
+        path:PATH.teachers,
+        element:<Teachers/>,
+    },
+    {
+        id:3,
+        path:PATH.students,
+        element:<Students/>,
+    },
+    {
+        id:4,
+        path:PATH.groups,
+        element:<Groups/>,
+    },
+    {
+        id:5,
+        path:PATH.market,
+        element:<Market/>,
+    },
+    {
+        id:6,
+        path:PATH.teachersAdd,
+        element:<TeachersCrud/>,
     }
    
 ]
