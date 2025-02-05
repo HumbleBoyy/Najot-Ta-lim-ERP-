@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ArrowLeftOutlined} from '@ant-design/icons'
 import { Button } from 'antd'
-const CrudCaption = ({title,icon,btnText}) => {
+const CrudCaption = ({title,icon,btnText,isLoading}) => {
 const navigate = useNavigate()
 
 
@@ -12,7 +12,7 @@ const navigate = useNavigate()
       <Button onClick={()=> navigate(-1)} size='middle' className='border-none'><ArrowLeftOutlined/></Button>
       <h2 className='text-[25px] font-bold'>{title}</h2>
     </div>
-    <Button htmlType='submit' type='primary' size='large'>{icon} {btnText}</Button>
+    <Button htmlType='submit' type='primary' loading={isLoading} size='large'>{icon} {btnText}</Button>
   </div>
   )
 }

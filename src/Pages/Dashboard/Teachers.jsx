@@ -35,7 +35,7 @@ const Teachers = () => {
         params:{stackId}
       }).then(res => {
           setTeachers( res.data.map((item, index) => {
-            item.key = index
+            item.key = index + 1
             item.name = item.name ? item.name : <QuestionOutlined />
             item.stack = item.stack ? item.stack : <QuestionOutlined />
             item.action = <button onClick={()=> setAction(!action)} className='flex justify-center items-center text-white text-2xl w-[40px] rounded-md cursor-pointer h-[40px] bg-[#bc8e5b] '>
@@ -49,7 +49,7 @@ const Teachers = () => {
   const columns = [
     {
       title:"ID",
-      dataIndex:"id"
+      dataIndex:"key"
     },
     {
       title:"Ism",
@@ -65,7 +65,7 @@ const Teachers = () => {
     },
     {
       title:"Telefon raqami",
-      dataIndex:"phoneNumber"
+      dataIndex:"phone"
     },
     {
       title:"Batafsil",

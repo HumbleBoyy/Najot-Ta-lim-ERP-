@@ -1,216 +1,335 @@
 {
-    "users":[
-        {
-            "username":"Asadulloh",
-            "password":"123456"
-        }
-    ],
-    "categories":[
-       {
-          "id":1,
-          "title":"Asosiy",
-          "path":"/"
-       },
-       {
-        "id":2,
-        "title":"Ustozlor",
-        "path":"/teachers"
-       },
-       {
-        "id":3,
-        "title":"O'quvchilar",
-        "path":"/students"
-       },
-       {
-        "id":4,
-        "title":"Do'kon",
-        "path":"/market"
-       },
-       {
-        "id":5,
-        "title":"Guruhlar",
-        "path":"/groups"
-       }
-    ], 
-    "teachers": [
-        {
-            "id":"1",
-            "name":"Asadulloh",
-            "surName":"Abdurakhmonov",
-            "age":21,
-            "stack":"Frontend developer",
-            "stackId":"1",
-            "region":"Andijon",
-            "regionId":"1",
-            "district":"Izboskan",
-            "status":"Asosiy Ustoz",
-            "statusId":"2",
-            "experience":"2 yil",
-            "gender":"Male",
-            "isMerried":false,
-            "email":"asadullohsemail@gmail.com",
-            "phone":"+998942360036",
-            "workedCompany":["Twitter", "Google"],
-            "workedCompanyId":[3, 1]
-        },
-        {
-            "id":"2",
-            "name":"Akmal",
-            "surname":"Teshayev",
-            "age":20,
-            "stack":"Backend developer",
-            "stackId":"2",
-            "region":"Sirdaryo",
-            "regionId":"5",
-            "district":"Guliston",
-            "status":"Yordamchi ustoz",
-            "statusId":"3",
-            "experience":"1 yil",
-            "gender":"Male",
-            "isMerried":false,
-            "email":"johnemail@gmail.com",
-            "phone":"+998942160616",
-            "workedCompany":["Google", "Meta"],
-            "workedCompanyId":[1, 2]
-        }
-    
-    ],
-    "stack":[
-        {
-            "id":"1",
-            "name":"Frontend"
-        },
-        {
-            "id":"2",
-            "name":"Backend"
-        },
-        {
-            "id":"3",
-            "name":"Full stack"
-        },
-        {
-            "id":"4",
-            "name":"Graphic design"
-        },
-        {
-            "id":"5",
-            "name":"Flutter"
-        },
-        {
-            "id":"6",
-            "name":"SMM"
-        },
-        {
-            "id":"7",
-            "name":"Java"
-        }
-    ],
-    "regions":[
-        {
-            "id":"1",
-            "name":"Andijon"
-        },
-        {
-            "id":"2",
-            "name":"Farg'ona"
-        },
-        {
-            "id":"3",
-            "name":"Namangan"
-        },
-        {
-            "id":"4",
-            "name":"Toshkent"
-        },
-        {
-            "id":"5",
-            "name":"Sirdaryo"
-        },
-        {
-            "id":"6",
-            "name":"Jizzax"
-        },
-        {
-            "id":"7",
-            "name":"Navoi"
-        },
-        {
-            "id":"8",
-            "name":"Samarqand"
-        },
-        {
-            "id":"9",
-            "name":"Buxoro"
-        },
-        {
-            "id":"10",
-            "name":"Qashqadaryo"
-        },
-        {
-            "id":"11",
-            "name":"Surxondaryo"
-        },
-        {
-            "id":"12",
-            "name":"Xorazm"
-        },
-        {
-            "id":"13",
-            "name":"Qoraqalpag'iston"
-        }
-    ],
-    "status":[
-        {
-            "id":"1",
-            "name":"Bosh Ustoz"
-        },
-        {
-            "id":"2",
-            "name":"Asosiy Ustoz"
-        },
-        {
-            "id":"3",
-            "name":"Yordamchi Ustoz"
-        }
-    ],
-    "companiesList":[
-        {
-            "id":"1",
-            "name":"Google"
-        },
-        {
-            "id":"2",
-            "name":"Meta"
-        },
-        {
-            "id":"3",
-            "name":"Twitter"
-        },  
-        {
-            "id":"4",
-            "name":"Telegram"
-        },
-        {
-            "id":"5",
-            "name":"Amazon"
-        },
-        {
-            "id":"6",
-            "name":"Master Card"
-        },
-        {
-            "id":"7",
-            "name":"Tesla"
-        },
-        {
-            "id":"8",
-            "name":"Microsoft"
-        },
-        {
-            "id":"9",
-            "name":"Visa"
-        }
-    ]
-    
-     
+  "users": [
+    {
+      "username": "Asadulloh",
+      "password": "123456"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Asosiy",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "Ustozlor",
+      "path": "/teachers"
+    },
+    {
+      "id": 3,
+      "title": "O'quvchilar",
+      "path": "/students"
+    },
+    {
+      "id": 4,
+      "title": "Do'kon",
+      "path": "/market"
+    },
+    {
+      "id": 5,
+      "title": "Guruhlar",
+      "path": "/groups"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "Asadulloh",
+      "surName": "Abdurakhmonov",
+      "age": 21,
+      "stack": "Frontend developer",
+      "stackId": "1",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "Izboskan",
+      "status": "Asosiy Ustoz",
+      "statusId": "2",
+      "experience": "2 yil",
+      "gender": "Male",
+      "isMerried": false,
+      "email": "asadullohsemail@gmail.com",
+      "phone": "+998942360036",
+      "workedCompany": [
+        "Twitter",
+        "Google"
+      ],
+      "workedCompanyId": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Akmal",
+      "surname": "Teshayev",
+      "age": 20,
+      "stack": "Backend developer",
+      "stackId": "2",
+      "region": "Sirdaryo",
+      "regionId": "5",
+      "district": "Guliston",
+      "status": "Yordamchi ustoz",
+      "statusId": "3",
+      "experience": "1 yil",
+      "gender": "Male",
+      "isMerried": false,
+      "email": "johnemail@gmail.com",
+      "phone": "+998942160616",
+      "workedCompany": [
+        "Google",
+        "Meta"
+      ],
+      "workedCompanyId": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "49d1",
+      "name": "Asadulloh",
+      "surName": "Abdurakhmonov",
+      "age": "21",
+      "stack": "Frontend",
+      "stackId": "1",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "Izboskan",
+      "status": "Bosh Ustoz",
+      "statusId": "1",
+      "experience": "2yil",
+      "gender": "Erkak",
+      "email": "asadulloh@gmail.com",
+      "phone": "+998956552515",
+      "workedCompany": [
+        "Google",
+        "Twitter",
+        "Amazon",
+        "Master Card",
+        "Tesla"
+      ]
+    },
+    {
+      "id": "432e",
+      "name": "Asadulloh",
+      "surName": "Abdurakhmonov",
+      "age": "21",
+      "stack": "Frontend",
+      "stackId": "1",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "Izboskan",
+      "status": "Bosh Ustoz",
+      "statusId": "1",
+      "experience": "2yil",
+      "gender": "Erkak",
+      "email": "asadulloh@gmail.com",
+      "phone": "+998956552515",
+      "workedCompany": [
+        "Google",
+        "Twitter",
+        "Amazon",
+        "Master Card",
+        "Tesla"
+      ]
+    },
+    {
+      "id": "fd75",
+      "name": "dscdscsdvs",
+      "surName": "dxvdsvdsv",
+      "age": "23",
+      "stack": "Frontend",
+      "stackId": "1",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "vdsvdsvsvs",
+      "status": "Yordamchi Ustoz",
+      "statusId": "3",
+      "experience": "sds12",
+      "gender": "Erkak",
+      "email": "asdadsa@gmail.com",
+      "phone": "89789796968678",
+      "workedCompany": [
+        "Tesla",
+        "Master Card"
+      ]
+    },
+    {
+      "id": "8bd6",
+      "name": "dscdscsdvs",
+      "surName": "dxvdsvdsv",
+      "age": "23",
+      "stack": "Frontend",
+      "stackId": "1",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "vdsvdsvsvs",
+      "status": "Yordamchi Ustoz",
+      "statusId": "3",
+      "experience": "sds12",
+      "gender": "Erkak",
+      "email": "asdadsa@gmail.com",
+      "phone": "89789796968678",
+      "workedCompany": [
+        "Tesla",
+        "Master Card"
+      ]
+    },
+    {
+      "id": "c948",
+      "name": "Assa",
+      "surName": "asdasdasd",
+      "age": "123",
+      "stack": "Backend",
+      "stackId": "2",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "sdfsdfsddf",
+      "status": "Bosh Ustoz",
+      "statusId": "1",
+      "experience": "asddsd",
+      "gender": "Erkak",
+      "email": "sacascasca@gmail.com",
+      "phone": "5434532r142533242",
+      "workedCompany": [
+        "Meta"
+      ]
+    }
+  ],
+  "stack": [
+    {
+      "id": "1",
+      "name": "Frontend"
+    },
+    {
+      "id": "2",
+      "name": "Backend"
+    },
+    {
+      "id": "3",
+      "name": "Full stack"
+    },
+    {
+      "id": "4",
+      "name": "Graphic design"
+    },
+    {
+      "id": "5",
+      "name": "Flutter"
+    },
+    {
+      "id": "6",
+      "name": "SMM"
+    },
+    {
+      "id": "7",
+      "name": "Java"
+    }
+  ],
+  "regions": [
+    {
+      "id": "1",
+      "name": "Andijon"
+    },
+    {
+      "id": "2",
+      "name": "Farg'ona"
+    },
+    {
+      "id": "3",
+      "name": "Namangan"
+    },
+    {
+      "id": "4",
+      "name": "Toshkent"
+    },
+    {
+      "id": "5",
+      "name": "Sirdaryo"
+    },
+    {
+      "id": "6",
+      "name": "Jizzax"
+    },
+    {
+      "id": "7",
+      "name": "Navoi"
+    },
+    {
+      "id": "8",
+      "name": "Samarqand"
+    },
+    {
+      "id": "9",
+      "name": "Buxoro"
+    },
+    {
+      "id": "10",
+      "name": "Qashqadaryo"
+    },
+    {
+      "id": "11",
+      "name": "Surxondaryo"
+    },
+    {
+      "id": "12",
+      "name": "Xorazm"
+    },
+    {
+      "id": "13",
+      "name": "Qoraqalpag'iston"
+    }
+  ],
+  "status": [
+    {
+      "id": "1",
+      "name": "Bosh Ustoz"
+    },
+    {
+      "id": "2",
+      "name": "Asosiy Ustoz"
+    },
+    {
+      "id": "3",
+      "name": "Yordamchi Ustoz"
+    }
+  ],
+  "companiesList": [
+    {
+      "id": "1",
+      "name": "Google"
+    },
+    {
+      "id": "2",
+      "name": "Meta"
+    },
+    {
+      "id": "3",
+      "name": "Twitter"
+    },
+    {
+      "id": "4",
+      "name": "Telegram"
+    },
+    {
+      "id": "5",
+      "name": "Amazon"
+    },
+    {
+      "id": "6",
+      "name": "Master Card"
+    },
+    {
+      "id": "7",
+      "name": "Tesla"
+    },
+    {
+      "id": "8",
+      "name": "Microsoft"
+    },
+    {
+      "id": "9",
+      "name": "Visa"
+    }
+  ]
 }
