@@ -11,11 +11,16 @@ const FilterCustom = ({filterId, setFilterId, extraClass, API, placeholder, mode
         }
         return data
     })
-    
+
     const handleSelect = (value, data) => {
         setFilterId(value)
-        console.log(data)
-        if(setFilterName)setFilterName(data.label)
+        if(setFilterName){
+            if(mode === "multiple"){
+                setFilterName(data.map(item => item.label))
+            }else{
+                setFilterName(data.label)
+            }
+        }
     }
 
   return (

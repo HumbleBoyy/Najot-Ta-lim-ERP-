@@ -21,28 +21,30 @@ const TeachersCrud = () => {
   const [status, setStatus] = useState(null)
   const [gender, setGender] = useState(null)
   const [isMerried, setIsMerried] = useState(null)
+  const [workedCompanyId, setWorkedCompanyId] = useState(null)
   const [workedCompany, setWorkedCompany] = useState(null)
-
 
   const handleAddTeacher = (e) => {
     e.preventDefault()
-    name, surName, age, stack,
-    stackId,
-    region,
-    regionId,
-    district,
-    status,
-    statusId,
-    experience,
-    gender
-    email,
-    phone
-    workedCompany
+    const data = { name, surName, age, stack, stackId, region,
+      regionId,
+      district,
+      status,
+      statusId,
+      experience,
+      gender,
+      email,
+      phone,
+      workedCompany
+    }
+
+    e.target.reset()
+    console.log(data)
   }
 
   return (
     <form onSubmit={handleAddTeacher} autoComplete='off' className='p-5'>
-     <CrudCaption icon={<PlusCircleFilled/>} title={"Ro'xatga qo'shish"} btnText={"Qo'shish"}/>
+     <CrudCaption icon={<PlusCircleFilled/>} title={"Ro'yxatga qo'shish"} btnText={"Qo'shish"}/>
       <div className='flex  justify-around mt-10'>
             <div className='flex flex-col w-[40%] gap-5'>
                <Input allowClear type='text' value={name} onChange={(e)=> setName(e.target.value)} required size='large' placeholder="Ism kiriting..."/>
@@ -58,9 +60,9 @@ const TeachersCrud = () => {
                 <FilterCustom API={"/regions"} filterId={regionId} setFilterName={setRegion} setFilterId={setRegionId} extraClass="!w-full" placeholder={"Viloyat tanlang"}/>
                 <Input allowClear type='text' value={district} onChange={(e)=> setDistrict(e.target.value)} required size='large' placeholder="Tuman kiriting..."/>
                 <FilterCustom API={"/status"} filterId={statusId} setFilterName={status} setFilterId={setStatusId} extraClass="!w-full" placeholder={"Maqom tanlang"}/>
-                <Select value={gender} onChange={(value) => setGender(value)} allowClearclassName={`w-full`} size='large'  placeholder={"Erkak/Ayol"} optionFilterProp='label' options={[{label:"Erkak", value:"Erkak"}, {label:"Ayol", value:"Ayol"}]} />
+                <Select value={gender} onChange={(value) => setGender(value)}  size='large'  placeholder={"Erkak/Ayol"} optionFilterProp='label' options={[{label:"Erkak", value:"Erkak"}, {label:"Ayol", value:"Ayol"}]} />
                 <Input allowClear type='text' value={isMerried} onChange={(e)=> setIsMerried(e.target.value)} required size='large' placeholder="Turmush qurganmi"/>
-                <FilterCustom API={"/companiesList"} mode={"multiple"} filterId={workedCompany} setFilterId={setWorkedCompany} extraClass="!w-full" placeholder={"Kompaniya tanlang"}/>
+                <FilterCustom API={"/companiesList"} mode={"multiple"} filterId={workedCompanyId} setFilterId={setWorkedCompanyId} setFilterName={setWorkedCompany} extraClass="!w-full" placeholder={"Kompaniya tanlang"}/>
             </div>
       </div>
     </form>

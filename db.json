@@ -50,7 +50,8 @@
             "isMerried":false,
             "email":"asadullohsemail@gmail.com",
             "phone":"+998942360036",
-            "workedCompany":["Asadullohs LLC", "Najot Ta'lim"]
+            "workedCompany":["Twitter", "Google"],
+            "workedCompanyId":[3, 1]
         },
         {
             "id":"2",
@@ -69,7 +70,8 @@
             "isMerried":false,
             "email":"johnemail@gmail.com",
             "phone":"+998942160616",
-            "workedCompany":["Asadullohs LLC", "Najot Ta'lim"]
+            "workedCompany":["Google", "Meta"],
+            "workedCompanyId":[1, 2]
         }
     
     ],
