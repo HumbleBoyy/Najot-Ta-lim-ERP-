@@ -34,10 +34,9 @@
   ],
   "teachers": [
     {
-      "id": "1",
       "name": "Asadulloh",
       "surName": "Abdurakhmonov",
-      "age": 21,
+      "age": "23",
       "stack": "Frontend developer",
       "stackId": "1",
       "region": "Andijon",
@@ -47,152 +46,73 @@
       "statusId": "2",
       "experience": "2 yil",
       "gender": "Male",
-      "isMerried": false,
       "email": "asadullohsemail@gmail.com",
       "phone": "+998942360036",
       "workedCompany": [
-        "Twitter",
+        null,
+        null,
+        "Amazon",
+        "Telegram",
+        "Tesla",
+        "Meta",
         "Google"
       ],
-      "workedCompanyId": [
-        3,
-        1
-      ]
+      "id": "1"
     },
     {
-      "id": "2",
-      "name": "Akmal",
-      "surname": "Teshayev",
-      "age": 20,
-      "stack": "Backend developer",
-      "stackId": "2",
-      "region": "Sirdaryo",
-      "regionId": "5",
-      "district": "Guliston",
-      "status": "Yordamchi ustoz",
-      "statusId": "3",
-      "experience": "1 yil",
-      "gender": "Male",
-      "isMerried": false,
-      "email": "johnemail@gmail.com",
-      "phone": "+998942160616",
-      "workedCompany": [
-        "Google",
-        "Meta"
-      ],
-      "workedCompanyId": [
-        1,
-        2
-      ]
-    },
-    {
-      "id": "49d1",
-      "name": "Asadulloh",
-      "surName": "Abdurakhmonov",
+      "id": "bf3c",
+      "name": "John",
+      "surName": "Jerry",
       "age": "21",
       "stack": "Frontend",
       "stackId": "1",
-      "region": "Andijon",
-      "regionId": "1",
-      "district": "Izboskan",
+      "region": "Farg'ona",
+      "regionId": "2",
+      "district": "Chust",
       "status": "Bosh Ustoz",
       "statusId": "1",
-      "experience": "2yil",
+      "experience": "3Yil",
       "gender": "Erkak",
-      "email": "asadulloh@gmail.com",
-      "phone": "+998956552515",
+      "email": "jerry@gmail.com",
+      "phone": "+9987272721",
       "workedCompany": [
-        "Google",
         "Twitter",
-        "Amazon",
         "Master Card",
-        "Tesla"
+        "Tesla",
+        "Microsoft"
       ]
     },
     {
-      "id": "432e",
-      "name": "Asadulloh",
-      "surName": "Abdurakhmonov",
+      "id": "7e8b",
+      "name": "Asadbek",
+      "surName": "Asadbekov",
       "age": "21",
-      "stack": "Frontend",
-      "stackId": "1",
-      "region": "Andijon",
-      "regionId": "1",
-      "district": "Izboskan",
-      "status": "Bosh Ustoz",
-      "statusId": "1",
-      "experience": "2yil",
-      "gender": "Erkak",
-      "email": "asadulloh@gmail.com",
-      "phone": "+998956552515",
-      "workedCompany": [
-        "Google",
-        "Twitter",
-        "Amazon",
-        "Master Card",
-        "Tesla"
-      ]
-    },
-    {
-      "id": "fd75",
-      "name": "dscdscsdvs",
-      "surName": "dxvdsvdsv",
-      "age": "23",
-      "stack": "Frontend",
-      "stackId": "1",
-      "region": "Andijon",
-      "regionId": "1",
-      "district": "vdsvdsvsvs",
-      "status": "Yordamchi Ustoz",
-      "statusId": "3",
-      "experience": "sds12",
-      "gender": "Erkak",
-      "email": "asdadsa@gmail.com",
-      "phone": "89789796968678",
-      "workedCompany": [
-        "Tesla",
-        "Master Card"
-      ]
-    },
-    {
-      "id": "8bd6",
-      "name": "dscdscsdvs",
-      "surName": "dxvdsvdsv",
-      "age": "23",
-      "stack": "Frontend",
-      "stackId": "1",
-      "region": "Andijon",
-      "regionId": "1",
-      "district": "vdsvdsvsvs",
-      "status": "Yordamchi Ustoz",
-      "statusId": "3",
-      "experience": "sds12",
-      "gender": "Erkak",
-      "email": "asdadsa@gmail.com",
-      "phone": "89789796968678",
-      "workedCompany": [
-        "Tesla",
-        "Master Card"
-      ]
-    },
-    {
-      "id": "c948",
-      "name": "Assa",
-      "surName": "asdasdasd",
-      "age": "123",
       "stack": "Backend",
       "stackId": "2",
       "region": "Andijon",
       "regionId": "1",
-      "district": "sdfsdfsddf",
+      "district": "Izboskan",
       "status": "Bosh Ustoz",
       "statusId": "1",
-      "experience": "asddsd",
+      "experience": "5yil",
       "gender": "Erkak",
-      "email": "sacascasca@gmail.com",
-      "phone": "5434532r142533242",
+      "email": "asadbek@gmail.com",
+      "phone": "+998956665516",
+      "isMerried": "Yo'q",
+      "study": "WestMinister",
+      "workedCompanyId": [
+        "1",
+        "4",
+        "6",
+        "7",
+        "8"
+      ],
       "workedCompany": [
-        "Meta"
+        "Google",
+        "Telegram",
+        "Master Card",
+        "Tesla",
+        "Microsoft"
       ]
     }
   ],

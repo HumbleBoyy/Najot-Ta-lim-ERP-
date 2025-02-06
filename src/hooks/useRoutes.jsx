@@ -1,6 +1,6 @@
 import React from 'react'
 import { PATH } from './usePath'
-import { Groups, Home, Market, Students, Teachers, TeachersCrud } from '../Pages/Dashboard'
+import { Groups, Home, Market, Students, Teachers, TeachersCrud, TeachersMore } from '../Pages/Dashboard'
 import { DeploymentUnitOutlined, HomeOutlined, ShoppingCartOutlined, TeamOutlined, UserAddOutlined, UsergroupAddOutlined } from '@ant-design/icons'
 
 export const navbarRoutesList = [
@@ -71,6 +71,15 @@ export const dashboardRoutesList = [
         id:6,
         path:PATH.teachersAdd,
         element:<TeachersCrud/>,
+    },
+    {
+        id:7,
+        path:PATH.teachersMore,
+        element:<TeachersMore/>,
+    },
+    {
+        id:8,
+        path:PATH.teachersEdit,
+        element:<TeachersCrud/>,
     }
-   
 ]

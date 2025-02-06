@@ -1,13 +1,16 @@
 import {PlusCircleFilled } from '@ant-design/icons'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CrudCaption from '../../Components/CrudCaption'
 import { Input, Select } from 'antd'
 import FilterCustom from '../../Components/FilterCustom'
-import { Create } from '../../service/auth'
-import { useNavigate } from 'react-router-dom'
-import toast, { Toaster } from 'react-hot-toast'
+import { Create, Edit } from '../../service/auth'
+import { useNavigate, useParams } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
+import getRequest from '../../service/getRequest'
 
 const TeachersCrud = () => {
+  const {id} = useParams()
+  const singleData = id && getRequest(`/teachers/${id}`, true)
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
 
@@ -41,10 +44,45 @@ const TeachersCrud = () => {
       gender,
       email,
       phone,
+      isMerried,
+      study,
+      workedCompanyId,
       workedCompany
     }
-    Create(data, "/teachers", setIsLoading, navigate)
+    
+    if(id){
+       data.id = id
+       Edit(data, `/teachers/${id}`, setIsLoading, navigate)
+    }else{
+      Create(data, "/teachers", setIsLoading, navigate)
+    }
   }
+
+  console.log(singleData)
+  // Edit Part Update
+  useEffect(()=> {
+     if(singleData){
+       setName(singleData.name)
+       setSureName(singleData.surName)
+       setAge(singleData.age)
+       setExperience(singleData.experience)
+       setEmail(singleData.email)
+       setPhone(singleData.phone)
+       setStudy(singleData.study)
+       setStackId(singleData.stackId)
+       setStack(singleData.stack)
+       setRegionId(singleData.regionId)
+       setRegion(singleData.region)
+       setDistrict(singleData.district)
+       setStatusId(singleData.statusId)
+       setStatus(singleData.status)
+       setGender(singleData.gender)
+       setIsMerried(singleData.isMerried)
+       setWorkedCompany(singleData.workedCompany)
+       setWorkedCompanyId(singleData.workedCompanyId)
+       
+     }
+  },[singleData])
 
   return (
     <form onSubmit={handleAddTeacher} autoComplete='off' className='p-5'>
