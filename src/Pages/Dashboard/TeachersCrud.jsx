@@ -5,7 +5,7 @@ import { Input, Select } from 'antd'
 import FilterCustom from '../../Components/FilterCustom'
 import { Create, Edit } from '../../service/auth'
 import { useNavigate, useParams } from 'react-router-dom'
-import { Toaster } from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast'
 import getRequest from '../../service/getRequest'
 
 const TeachersCrud = () => {
@@ -52,9 +52,9 @@ const TeachersCrud = () => {
     
     if(id){
        data.id = id
-       Edit(data, `/teachers/${id}`, setIsLoading, navigate)
+       Edit(data, `/teachers/${id}`, setIsLoading, navigate, toast)
     }else{
-      Create(data, "/teachers", setIsLoading, navigate)
+      Create(data, "/teachers", setIsLoading, navigate, toast)
     }
   }
 

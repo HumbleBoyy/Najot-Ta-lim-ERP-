@@ -1,21 +1,24 @@
-import toast from "react-hot-toast"
 import { instance } from "../hooks/instance"
 
-export const  Create = (data, api, setIsLoading, navigate) => {
+export const  Create = (data, api, setIsLoading, navigate, toast) => {
    instance().post(api, data).then(() => {
       setTimeout(()=> {
-         setIsLoading(false)
          toast.success("Ro'yxatga qo'shildi")
+      },500)
+      setTimeout(()=> {
+         setIsLoading(false)
          navigate(-1)
        },1000)
    })
 }
 
-export const  Edit = (data, api, setIsLoading, navigate) => {
+export const  Edit = (data, api, setIsLoading, navigate, toast) => {
    instance().put(api, data).then(() => {
       setTimeout(()=> {
+         toast.success("Tahrirlandi")
+      },500)
+      setTimeout(()=> {
          setIsLoading(false)
-         toast.success("Tahrirlandi ")
          navigate(-1)
        },1000)
    })

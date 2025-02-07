@@ -2,32 +2,33 @@
   "users": [
     {
       "username": "Asadulloh",
-      "password": "123456"
+      "password": "123456",
+      "id": "78e1"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Asosiy",
       "path": "/"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Ustozlor",
       "path": "/teachers"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "O'quvchilar",
       "path": "/students"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Do'kon",
       "path": "/market"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Guruhlar",
       "path": "/groups"
     }
@@ -36,7 +37,7 @@
     {
       "name": "Asadulloh",
       "surName": "Abdurakhmonov",
-      "age": "23",
+      "age": "21",
       "stack": "Frontend developer",
       "stackId": "1",
       "region": "Andijon",
@@ -48,13 +49,14 @@
       "gender": "Male",
       "email": "asadullohsemail@gmail.com",
       "phone": "+998942360036",
+      "isMerried": "Yo'q",
+      "study": "Westminister",
+      "workedCompanyId": [
+        "5",
+        "1"
+      ],
       "workedCompany": [
-        null,
-        null,
         "Amazon",
-        "Telegram",
-        "Tesla",
-        "Meta",
         "Google"
       ],
       "id": "1"
@@ -83,14 +85,13 @@
       ]
     },
     {
-      "id": "7e8b",
       "name": "Asadbek",
       "surName": "Asadbekov",
-      "age": "21",
+      "age": "211",
       "stack": "Backend",
       "stackId": "2",
-      "region": "Andijon",
-      "regionId": "1",
+      "region": "Sirdaryo",
+      "regionId": "5",
       "district": "Izboskan",
       "status": "Bosh Ustoz",
       "statusId": "1",
@@ -113,7 +114,39 @@
         "Master Card",
         "Tesla",
         "Microsoft"
-      ]
+      ],
+      "id": "7e8b"
+    },
+    {
+      "name": "John",
+      "surName": "Doe",
+      "age": "32",
+      "stack": "Frontend",
+      "stackId": "1",
+      "region": "Qoraqalpag'iston",
+      "regionId": "13",
+      "district": "Nukus",
+      "status": "Bosh Ustoz",
+      "statusId": "1",
+      "experience": "8yil",
+      "gender": "Erkak",
+      "email": "john@gmail.com",
+      "phone": "+998942360036",
+      "isMerried": "Ha",
+      "study": "WestMinister",
+      "workedCompanyId": [
+        "5",
+        "2",
+        "7",
+        "6"
+      ],
+      "workedCompany": [
+        "Amazon",
+        "Meta",
+        "Tesla",
+        "Master Card"
+      ],
+      "id": "c2ec"
     }
   ],
   "stack": [
