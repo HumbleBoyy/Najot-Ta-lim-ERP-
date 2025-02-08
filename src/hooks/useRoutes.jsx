@@ -59,7 +59,7 @@ export const dashboardRoutesList = [
     },
     {
         id:4,
-        path:PATH.groups,
+        path:PATH.groupId,
         element:<Groups/>,
     },
     {

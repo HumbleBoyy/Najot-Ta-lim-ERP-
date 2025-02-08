@@ -1,9 +1,19 @@
 import React, { useState } from 'react'
 import Caption from '../../Components/Caption'
-import { AppstoreAddOutlined } from '@ant-design/icons'
-import { Card } from 'antd'
+import { AppstoreAddOutlined, EditFilled, InfoCircleFilled } from '@ant-design/icons'
+import { Button, Card } from 'antd'
 import getRequest from '../../service/getRequest'
 
+const cardContent = () => {
+  return(
+    <>
+         <div className='flex items-center gap-2'>
+             <Button type='primary' className='hover:!text-white' size='large'><EditFilled/>Tahrirlash</Button>
+             <Button type='primary' className='hover:!text-white' size='large'><InfoCircleFilled/>Batafsil</Button>
+         </div>
+    </>
+  )
+}
 
 
 const Stack = () => {
@@ -24,7 +34,8 @@ const Stack = () => {
             }}
             cover={<img alt="Images" className='h-[200px] object-cover' src={item.image} />}
             >
-                <Card.Meta title={item.name} />
+                <Card.Meta title={item.name} description={cardContent()}
+              />
             </Card>
         ))}
       </ul>

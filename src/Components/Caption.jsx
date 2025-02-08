@@ -12,7 +12,7 @@ const Caption = ({addLink, iconBtn, count}) => {
          <h2 className='font-bold text-[25px] mb-1'>{navbarRoutesList.map(item => item.path === path.pathname && item.title)}</h2>
          <p className='text-[15px] text-slate-400 lowercase'>{navbarRoutesList.map(item => item.path === path.pathname && item.title)} {count}-ta</p>
        </div>
-       <Button onClick={()=> navigate(`${addLink}`)} htmlType='button' size='large' type='primary' icon={iconBtn} className='!addBtn'>Qo'shish</Button>
+       <Button onClick={()=> navigate(`${addLink}`)} htmlType='button' size='large' type='primary' icon={iconBtn} className='!addBtn hover:!text-white'>Qo'shish</Button>
     </div>
   )
 }
