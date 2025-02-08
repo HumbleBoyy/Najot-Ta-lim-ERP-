@@ -5,6 +5,7 @@ import CustomTable from '../../Components/CustomTable';
 import { PATH } from '../../hooks/usePath';
 import FilterCustom from '../../Components/FilterCustom';
 import { getTeachers } from '../../service/getTeachers';
+import { UserAddOutlined } from '@ant-design/icons';
 
 const Teachers = () => {
   const [stackId, setStackId] = useState(null)
@@ -59,7 +60,7 @@ getTeachers(stackId, refresh, setTeachers, teachers)
   return (
    <>
     <div className={`p-5`}>
-     <Caption addLink={PATH.teachersAdd}/>
+     <Caption addLink={PATH.teachersAdd} iconBtn={<UserAddOutlined />} count={teachers.length}/>
      <div className='flex gap-2 mt-2'>
         <label className='flex flex-col'>
           <span className='text-[15px] text-slate-400'>Qidirish</span>

@@ -5,6 +5,7 @@ import Students from "./Students"
 import Home from './Home'
 import TeachersCrud from "./TeachersCrud"
 import TeachersMore from "./TeachersMore"
+import Stack from "./Stack"
 
 export {
     Home,
@@ -13,5 +14,6 @@ export {
     Teachers,
     Students,
     TeachersCrud,
-    TeachersMore
+    TeachersMore,
+    Stack
 }

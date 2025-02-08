@@ -90,7 +90,7 @@ const TeachersCrud = () => {
         position="top-center"
         reverseOrder={false}
       />
-     <CrudCaption isLoading={isLoading} icon={<PlusCircleFilled/>} title={"Ro'yxatga qo'shish"} btnText={"Qo'shish"}/>
+     <CrudCaption isLoading={isLoading} icon={<PlusCircleFilled/>} title={id ? "Tahrirlash" : "Ro'yxatga qo'shish"} btnText={id ? "Tahrirlash" : "Qo'shish"}/>
       <div className='flex  justify-around mt-10'>
             <div className='flex flex-col w-[40%] gap-5'>
                <Input allowClear type='text' value={name} onChange={(e)=> setName(e.target.value)} required size='large' placeholder="Ism kiriting..."/>

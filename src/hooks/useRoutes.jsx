@@ -1,7 +1,7 @@
 import React from 'react'
 import { PATH } from './usePath'
-import { Groups, Home, Market, Students, Teachers, TeachersCrud, TeachersMore } from '../Pages/Dashboard'
-import { DeploymentUnitOutlined, HomeOutlined, ShoppingCartOutlined, TeamOutlined, UserAddOutlined, UsergroupAddOutlined } from '@ant-design/icons'
+import { Groups, Home, Market, Stack, Students, Teachers, TeachersCrud, TeachersMore } from '../Pages/Dashboard'
+import {AppstoreOutlined, HomeOutlined, ShoppingCartOutlined, UserAddOutlined, UsergroupAddOutlined, WindowsOutlined } from '@ant-design/icons'
 
 export const navbarRoutesList = [
     {
@@ -27,10 +27,10 @@ export const navbarRoutesList = [
     },
     {
         id:4,
-        path:PATH.groups,
-        element:<Groups/>,
-        title:"Guruhlar",
-        icon:<DeploymentUnitOutlined className='!text-[25px]'/>
+        path:PATH.stack,
+        element:<Stack/>,
+        title:"Yo'nalishlar",
+        icon:<AppstoreOutlined className='!text-[25px]'/>
     },
     {
         id:5,
@@ -81,5 +81,10 @@ export const dashboardRoutesList = [
         id:8,
         path:PATH.teachersEdit,
         element:<TeachersCrud/>,
+    },
+    {
+        id:9,
+        path:PATH.stack,
+        element:<Stack/>,
     }
 ]

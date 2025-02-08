@@ -12,7 +12,7 @@ const navigate = useNavigate()
       <Button onClick={()=> navigate(-1)} size='middle' className='border-none'><ArrowLeftOutlined/></Button>
       <h2 className='text-[25px] font-bold'>{title}</h2>
     </div>
-    <Button htmlType='submit' type='primary' loading={isLoading} size='large'>{icon} {btnText}</Button>
+    <Button htmlType='submit' type='primary' loading={isLoading} size='large' className='hover:!text-white'>{icon} {btnText}</Button>
   </div>
   )
 }

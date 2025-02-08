@@ -46,107 +46,90 @@
       "status": "Asosiy Ustoz",
       "statusId": "2",
       "experience": "2 yil",
-      "gender": "Male",
+      "gender": "Erkak",
       "email": "asadullohsemail@gmail.com",
       "phone": "+998942360036",
       "isMerried": "Yo'q",
       "study": "Westminister",
       "workedCompanyId": [
         "5",
-        "1"
+        "1",
+        "7",
+        "8",
+        "6",
+        "4",
+        "3",
+        "2"
       ],
       "workedCompany": [
         "Amazon",
-        "Google"
+        "Google",
+        "Tesla",
+        "Microsoft",
+        "Master Card",
+        "Telegram",
+        "Twitter",
+        "Meta"
       ],
       "id": "1"
     },
     {
-      "id": "bf3c",
-      "name": "John",
-      "surName": "Jerry",
+      "name": "Asadbek",
+      "surName": "Abdurakhmonov",
       "age": "21",
       "stack": "Frontend",
       "stackId": "1",
+      "region": "Andijon",
+      "regionId": "1",
+      "district": "Baliqchi",
+      "status": "Asosiy Ustoz",
+      "statusId": "2",
+      "experience": "2yil",
+      "gender": "Erkak",
+      "email": "asad@gmail.com",
+      "phone": "+998902421561",
+      "isMerried": "Yo'q",
+      "study": "Westminister",
+      "workedCompanyId": [
+        "8",
+        "6",
+        "4"
+      ],
+      "workedCompany": [
+        "Microsoft",
+        "Master Card",
+        "Telegram"
+      ],
+      "id": "9f7a"
+    },
+    {
+      "id": "0381",
+      "name": "Jahongir",
+      "surName": "Aliyev",
+      "age": "22",
+      "stack": "Full stack",
+      "stackId": "3",
       "region": "Farg'ona",
       "regionId": "2",
-      "district": "Chust",
+      "district": "Chadak",
       "status": "Bosh Ustoz",
       "statusId": "1",
-      "experience": "3Yil",
+      "experience": "4yil",
       "gender": "Erkak",
-      "email": "jerry@gmail.com",
-      "phone": "+9987272721",
-      "workedCompany": [
-        "Twitter",
-        "Master Card",
-        "Tesla",
-        "Microsoft"
-      ]
-    },
-    {
-      "name": "Asadbek",
-      "surName": "Asadbekov",
-      "age": "211",
-      "stack": "Backend",
-      "stackId": "2",
-      "region": "Sirdaryo",
-      "regionId": "5",
-      "district": "Izboskan",
-      "status": "Bosh Ustoz",
-      "statusId": "1",
-      "experience": "5yil",
-      "gender": "Erkak",
-      "email": "asadbek@gmail.com",
-      "phone": "+998956665516",
-      "isMerried": "Yo'q",
-      "study": "WestMinister",
-      "workedCompanyId": [
-        "1",
-        "4",
-        "6",
-        "7",
-        "8"
-      ],
-      "workedCompany": [
-        "Google",
-        "Telegram",
-        "Master Card",
-        "Tesla",
-        "Microsoft"
-      ],
-      "id": "7e8b"
-    },
-    {
-      "name": "John",
-      "surName": "Doe",
-      "age": "32",
-      "stack": "Frontend",
-      "stackId": "1",
-      "region": "Qoraqalpag'iston",
-      "regionId": "13",
-      "district": "Nukus",
-      "status": "Bosh Ustoz",
-      "statusId": "1",
-      "experience": "8yil",
-      "gender": "Erkak",
-      "email": "john@gmail.com",
-      "phone": "+998942360036",
+      "email": "jahon@gmail.com",
+      "phone": "+998976152515",
       "isMerried": "Ha",
-      "study": "WestMinister",
+      "study": "Harvard",
       "workedCompanyId": [
-        "5",
-        "2",
-        "7",
-        "6"
+        "8",
+        "6",
+        "5"
       ],
       "workedCompany": [
-        "Amazon",
-        "Meta",
-        "Tesla",
-        "Master Card"
-      ],
-      "id": "c2ec"
+        "Microsoft",
+        "Master Card",
+        "Amazon"
+      ]
     }
   ],
   "stack": [
@@ -283,6 +266,43 @@
     {
       "id": "9",
       "name": "Visa"
+    }
+  ],
+  "stackList": [
+    {
+      "id": "1",
+      "name": "Frontend",
+      "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Backend",
+      "image": "https://media.gettyimages.com/id/1422276740/vector/software-developer-flat-design.jpg?s=612x612&w=gi&k=20&c=nAeiHldWvLHV-S4CRv5BsRtwH2PlS7t7Dynol9npglE="
+    },
+    {
+      "id": "3",
+      "name": "Full Stack",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
+    },
+    {
+      "id": "4",
+      "name": "Graphic design",
+      "image": "https://inspiria.edu.in/wp-content/uploads/Career-in.-graphic-designers.webp"
+    },
+    {
+      "id": "5",
+      "name": "Flutter",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzpEkv-vlwrVppb-PQuWArI1sXR9vAYAwNg&s"
+    },
+    {
+      "id": "6",
+      "name": "Java",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyYYAhEoXWOcyx0sjHiaK2TrmUNxxMJdE6g&s"
+    },
+    {
+      "id": "7",
+      "name": "Foundation",
+      "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
     }
   ]
 }
