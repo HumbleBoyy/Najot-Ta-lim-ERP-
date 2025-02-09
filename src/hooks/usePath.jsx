@@ -4,7 +4,7 @@ export const PATH = {
     teachersAdd:"/teachers/add",
     teachersMore:"/teachers/:id",
     teachersEdit:"/teachers/:id/edit",
-    groupId:"/stack/:groupId",
+    groupId:"/stack/:stackId",
     stack:"/stack",
     students:"/students",
     market:"/market"

@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Caption from '../../Components/Caption'
 import { AppstoreAddOutlined, EditFilled, InfoCircleFilled } from '@ant-design/icons'
 import { Button, Card } from 'antd'
 import getRequest from '../../service/getRequest'
+import { useNavigate } from 'react-router-dom'
 
-const cardContent = () => {
+const cardContent = (navigate, id) => {
   return(
     <>
          <div className='flex items-center gap-2'>
              <Button type='primary' className='hover:!text-white' size='large'><EditFilled/>Tahrirlash</Button>
-             <Button type='primary' className='hover:!text-white' size='large'><InfoCircleFilled/>Batafsil</Button>
+             <Button onClick={()=> navigate(`${id}`)} type='primary' className='hover:!text-white' size='large'><InfoCircleFilled/>Batafsil</Button>
          </div>
     </>
   )
@@ -17,9 +18,8 @@ const cardContent = () => {
 
 
 const Stack = () => {
-   const stackList = getRequest("/stackList")
-   console.log(stackList)
-    
+  const stackList = getRequest("/stackList")
+  const navigate = useNavigate()
   return (
     <div className='p-5'>
       <Caption iconBtn={<AppstoreAddOutlined />} count={5}/>
@@ -32,9 +32,9 @@ const Stack = () => {
             style={{
             width: 350,
             }}
-            cover={<img alt="Images" className='h-[200px] object-cover' src={item.image} />}
+            cover={<img onClick={()=> navigate(`${item.id}`)} alt="Images" className='h-[200px] object-cover' src={item.image} />}
             >
-                <Card.Meta title={item.name} description={cardContent()}
+                <Card.Meta title={item.name} description={cardContent(navigate, item.id)}
               />
             </Card>
         ))}

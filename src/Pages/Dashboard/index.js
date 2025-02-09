@@ -1,4 +1,4 @@
-import Groups from "./Groups"
+import Group from "./Group"
 import Market from "./Market"
 import Teachers from "./Teachers"
 import Students from "./Students"
@@ -9,7 +9,7 @@ import Stack from "./Stack"
 
 export {
     Home,
-    Groups,
+    Group,
     Market,
     Teachers,
     Students,
