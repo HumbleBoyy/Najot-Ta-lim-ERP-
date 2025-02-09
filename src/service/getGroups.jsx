@@ -8,7 +8,7 @@ export const getGroups = (stackId, refresh, setGroups, teacherId) => {
   const navigate = useNavigate()
     useEffect(()=> {
         instance().get(`/groups?stackId=${stackId}`, {
-         params:[teacherId]
+         params:{teacherId}
         }).then(res => {
             setGroups( res.data.map((item, index) => {
               item.key = index + 1

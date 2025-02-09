@@ -371,9 +371,21 @@
       "createdAt": "03.08.2024",
       "studentCount": "8",
       "status": true,
-      "mainTeacher": "Nurillo Suyunboyev",
+      "mainTeacher": "Asadulloh Abdurakhmonov",
       "teacherId": "1",
       "supportTeacher": "Isroil Omonjonov",
+      "room": "Tesla"
+    },
+    {
+      "id": "3",
+      "stackId": "1",
+      "name": "React JS N78",
+      "createdAt": "03.08.2024",
+      "studentCount": "8",
+      "status": true,
+      "mainTeacher": "Nurillo Suyunboyev",
+      "teacherId": "0371",
+      "supportTeacher": "Isroil Alijonov",
       "room": "Facebook"
     },
     {
@@ -384,7 +396,7 @@
       "studentCount": "18",
       "status": false,
       "mainTeacher": "Valijon Quvondiqov",
-      "teacherId": "bc99",
+      "teacherId": "0331",
       "supportTeacher": "Isroil Omonjonov",
       "room": "Tesla"
     }
