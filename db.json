@@ -108,7 +108,7 @@
       "surName": "Aliyev",
       "age": "22",
       "stack": "Full stack",
-      "stackId": "3",
+      "stackId": "2",
       "region": "Farg'ona",
       "regionId": "2",
       "district": "Chadak",
@@ -117,6 +117,64 @@
       "experience": "4yil",
       "gender": "Erkak",
       "email": "jahon@gmail.com",
+      "phone": "+998976152515",
+      "isMerried": "Ha",
+      "study": "Harvard",
+      "workedCompanyId": [
+        "8",
+        "6",
+        "5"
+      ],
+      "workedCompany": [
+        "Microsoft",
+        "Master Card",
+        "Amazon"
+      ]
+    },
+    {
+      "id": "0371",
+      "name": "Nurillo",
+      "surName": "Suyunboyev",
+      "age": "23",
+      "stack": "Frontend developer",
+      "stackId": "1",
+      "region": "Farg'ona",
+      "regionId": "2",
+      "district": "Chadak",
+      "status": "Bosh Ustoz",
+      "statusId": "1",
+      "experience": "4yil",
+      "gender": "Erkak",
+      "email": "nurillo@gmail.com",
+      "phone": "+998976152515",
+      "isMerried": "Ha",
+      "study": "Harvard",
+      "workedCompanyId": [
+        "8",
+        "6",
+        "5"
+      ],
+      "workedCompany": [
+        "Microsoft",
+        "Master Card",
+        "Amazon"
+      ]
+    },
+    {
+      "id": "0331",
+      "name": "Valijon",
+      "surName": "Quvondiqov",
+      "age": "23",
+      "stack": "Frontend developer",
+      "stackId": "2",
+      "region": "Farg'ona",
+      "regionId": "2",
+      "district": "Chadak",
+      "status": "Asosiy Ustoz",
+      "statusId": "2",
+      "experience": "4yil",
+      "gender": "Erkak",
+      "email": "valijon@gmail.com",
       "phone": "+998976152515",
       "isMerried": "Ha",
       "study": "Harvard",
@@ -329,18 +387,6 @@
       "teacherId": "bc99",
       "supportTeacher": "Isroil Omonjonov",
       "room": "Tesla"
-    },
-    {
-      "id": "3",
-      "stackId": "2",
-      "name": "Backend Java N2",
-      "createdAt": "01.02.2024",
-      "studentCount": "20",
-      "status": true,
-      "mainTeacher": "Hondamir Usmonov",
-      "teacherId": "f2b9",
-      "supportTeacher": "Ibrohimjon Sadriddinov",
-      "room": "Instagram"
     }
   ]
 }

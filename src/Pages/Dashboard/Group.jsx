@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import { ArrowLeftOutlined, UsergroupAddOutlined } from '@ant-design/icons'
-import { Button } from 'antd'
+import { Button, Input } from 'antd'
 import { useNavigate, useParams } from 'react-router-dom'
 import getRequest from '../../service/getRequest'
 import CustomTable from '../../Components/CustomTable'
+import { getGroups } from '../../service/getGroups'
+import FilterCustom from '../../Components/FilterCustom'
 
 const Group = () => {
   const {stackId} = useParams()
   const {name} = getRequest(`/stack/${stackId}`)
-   const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [refresh, setRefresh] = useState(false)
+  const [groups, setGroups] = useState([])
   const navigate = useNavigate()
- 
+  const [teacherId, setTeacherId] = useState(null)
   const columns = [
     {
       title:"ID",
@@ -42,8 +46,23 @@ const Group = () => {
     }
   ]
 
-  const groups = getRequest(`/groups?stackId=${stackId}`)
-  console.log(groups)
+  getGroups(stackId, refresh, setGroups, teacherId)
+
+  const handleSearchByGroupName = (e) => {
+    setIsLoading(true)
+    const filterByName = groups.filter(item => item.name.toLowerCase().includes(e.target.value.toLowerCase()))
+      if(e.target.value){
+        setTimeout(()=> {
+          setIsLoading(false)
+          setGroups(filterByName)
+        }, 1000)
+      }else{
+        setTimeout(()=> {
+          setIsLoading(false)
+          setRefresh(!refresh)
+        },1000)
+      }
+   }
   return (
     <div className='p-5'>
       <div className='flex justify-between items-center'>
@@ -55,6 +74,11 @@ const Group = () => {
        </div>
       </div>
        <Button onClick={()=> navigate(`${addLink}`)} htmlType='button' size='large' type='primary' icon={<UsergroupAddOutlined/>} className='!addBtn hover:!text-white'>Qo'shish</Button>
+    </div>
+
+    <div className='p-5 flex gap-5'>
+        <Input onChange={handleSearchByGroupName} className='!w-[350px]' size='large' placeholder='Guruh Nomi Bilan Qidiring' allowClear/>
+        <FilterCustom API={`/teachers?stackId=${stackId}`} allowClear placeholder={"Asosiy ustoz bo'yicha saralash"} filterId={teacherId} setFilterId={setTeacherId}/>
     </div>
 
      <CustomTable isLoading={isLoading} columns={columns} dataSource={groups}/>
