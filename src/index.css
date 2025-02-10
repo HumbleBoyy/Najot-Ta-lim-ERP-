@@ -32,7 +32,7 @@
     font-family: "Poppins";
 }
 body{
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .main_color, .ant-spin-dot-holder {
