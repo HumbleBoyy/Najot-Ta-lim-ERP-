@@ -14,7 +14,7 @@ const Header = () => {
       setToken(null)
     }
   return (
-    <div className='flex items-center justify-between bg-[#01152a]'>
+    <div className='flex items-center sticky top-0 z-50 justify-between bg-[#01152a]'>
        <div className={`${openMenu ? "w-[90px]" : "w-[20%]"} main_color flex items-center p-4 gap-5`}>
          <MainLogo/>
          {openMenu ? null : <h2 className='text-white text-[20px]'>Admin</h2>}

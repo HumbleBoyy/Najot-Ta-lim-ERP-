@@ -7,7 +7,7 @@ import { Context } from '../Context/Context'
 const Navbar = () => {
   const {openMenu} = useContext(Context)
   return (
-    <div className='w-[20%]  h-[100vh] overflow-y-auto'>
+    <div className='w-[20%] fixed left-0 z-50 h-[100vh] overflow-hidden'>
       <Menu
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}

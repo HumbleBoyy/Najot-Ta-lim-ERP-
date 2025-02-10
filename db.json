@@ -369,7 +369,6 @@
       "stackId": "1",
       "name": "React JS N77",
       "createdAt": "03.08.2024",
-      "studentCount": "8",
       "status": true,
       "mainTeacher": "Asadulloh Abdurakhmonov",
       "teacherId": "1",
@@ -381,7 +380,6 @@
       "stackId": "1",
       "name": "React JS N78",
       "createdAt": "03.08.2024",
-      "studentCount": "8",
       "status": true,
       "mainTeacher": "Nurillo Suyunboyev",
       "teacherId": "0371",
@@ -393,12 +391,44 @@
       "stackId": "2",
       "name": "Backend NodeJS N76",
       "createdAt": "03.08.2024",
-      "studentCount": "18",
       "status": false,
       "mainTeacher": "Valijon Quvondiqov",
       "teacherId": "0331",
       "supportTeacher": "Isroil Omonjonov",
       "room": "Tesla"
+    }
+  ],
+  "students":[
+    {
+      "id":"1",
+      "studentId":"56178",
+      "name":"Jahongirbek",
+      "surname":"Karimov",
+      "age":"18",
+      "number":"+998907564563",
+      "region":"Sirdaryo",
+      "district":"Guliston",
+      "regionId":"5",
+      "email":"jahon@gmail.com",
+      "study":"Oxford",
+      "status":true,
+      "groupId":"1",
+      "stackId":"1"
+    },    {
+      "id":"2",
+      "studentId":"86578",
+      "name":"Kamron",
+      "surname":"Karimov",
+      "age":"19",
+      "number":"+998919004563",
+      "region":"Jizzax",
+      "district":"Zamin diydor",
+      "regionId":"6",
+      "email":"kamron@gmail.com",
+      "study":"Harvard",
+      "status":true,
+      "groupId":"2",
+      "stackId":"2"
     }
   ]
 }
