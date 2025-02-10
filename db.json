@@ -373,7 +373,8 @@
       "mainTeacher": "Asadulloh Abdurakhmonov",
       "teacherId": "1",
       "supportTeacher": "Isroil Omonjonov",
-      "room": "Tesla"
+      "room": "Amazon",
+      "roomId":"1"
     },
     {
       "id": "3",
@@ -384,7 +385,8 @@
       "mainTeacher": "Nurillo Suyunboyev",
       "teacherId": "0371",
       "supportTeacher": "Isroil Alijonov",
-      "room": "Facebook"
+      "room": "Meta",
+      "roomId":"3"
     },
     {
       "id": "2",
@@ -395,7 +397,8 @@
       "mainTeacher": "Valijon Quvondiqov",
       "teacherId": "0331",
       "supportTeacher": "Isroil Omonjonov",
-      "room": "Tesla"
+      "room": "Tesla",
+      "roomId":"5"
     }
   ],
   "students":[
