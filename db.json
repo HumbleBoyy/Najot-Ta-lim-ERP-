@@ -430,5 +430,27 @@
       "groupId":"2",
       "stackId":"2"
     }
+  ],
+  "rooms":[
+    {
+      "id":"1",
+      "name":"Amazon"
+    },
+    {
+      "id":"2",
+      "name":"Google"
+    },
+    {
+      "id":"3",
+      "name":"Meta"
+    },
+    {
+      "id":"4",
+      "name":"Galaxy"
+    },
+    {
+      "id":"5",
+      "name":"Tesla"
+    }
   ]
 }

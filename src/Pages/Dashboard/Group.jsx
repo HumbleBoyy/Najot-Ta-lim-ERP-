@@ -6,6 +6,7 @@ import getRequest from '../../service/getRequest'
 import CustomTable from '../../Components/CustomTable'
 import { getGroups } from '../../service/getGroups'
 import FilterCustom from '../../Components/FilterCustom'
+import { PATH } from '../../hooks/usePath'
 
 const Group = () => {
   const {stackId} = useParams()
@@ -73,7 +74,7 @@ const Group = () => {
          <p className='text-[15px] text-slate-400 lowercase'>Guruxlar 10-ta</p>
        </div>
       </div>
-       <Button onClick={()=> navigate(`${addLink}`)} htmlType='button' size='large' type='primary' icon={<UsergroupAddOutlined/>} className='!addBtn hover:!text-white'>Qo'shish</Button>
+       <Button onClick={()=> navigate(`${PATH.groupAdd}`)} htmlType='button' size='large' type='primary' icon={<UsergroupAddOutlined/>} className='!addBtn hover:!text-white'>Qo'shish</Button>
     </div>
 
     <div className='p-5 flex gap-5'>

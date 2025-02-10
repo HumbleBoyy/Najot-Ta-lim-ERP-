@@ -10,7 +10,7 @@ const DashBoardLayout = ({children}) => {
     <Header/>
       <div className='flex'>
        <Navbar/>
-       <div className={`w-[80%] duration-300 ${openMenu ? "w-[100%] ml-28 duration-300" : "ml-80"}`}>
+       <div className={`w-[80%] duration-300 ${openMenu ? "w-[100%] ml-28 duration-300" : "ml-76"}`}>
           {children}
        </div>
     </div>

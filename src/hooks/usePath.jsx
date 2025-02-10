@@ -7,5 +7,8 @@ export const PATH = {
     groupId:"/stack/:stackId",
     stack:"/stack",
     students:"/students",
-    market:"/market"
+    market:"/market",
+    groupAdd:"/stack/:stackId/add",
+    groupMore:"/stack/:stackId/:groupId",
+    groupEdit:"/stack/:stackId/:groupId/edit"
 }
