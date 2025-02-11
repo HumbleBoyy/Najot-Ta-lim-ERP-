@@ -11,6 +11,7 @@ import getRequest from '../../service/getRequest'
 
 const GroupCrud = () => {
   const {stackId, groupId} = useParams()
+
   const [isLoading, setIsLoading] = useState(false)
   const [groupName, setGroupName] = useState(null)
   const navigate = useNavigate()
@@ -72,7 +73,7 @@ const GroupCrud = () => {
       <div className='flex  justify-around mt-10'>
             <div className='flex flex-col w-[40%] gap-5'>
                <Input allowClear type='text' value={groupName} onChange={(e)=> setGroupName(e.target.value)} required size='large' placeholder="Guruh nomi...."/>
-               <FilterCustom API={`/teachers`} allowClear placeholder={"Asosiy ustoz bo'yicha saralash"} filterId={teacherId} setFilterId={setTeacherId} setFilterName={setMainTeacher} extraClass={"!w-full"}/>
+               <FilterCustom API={`/teachers?stackId=${stackId}`} allowClear placeholder={"Asosiy ustoz bo'yicha saralash"} filterId={teacherId} setFilterId={setTeacherId} setFilterName={setMainTeacher} extraClass={"!w-full"}/>
                <Input allowClear type='text' value={supportTeacher} onChange={(e)=> setSupportTeacher(e.target.value)} required size='large' placeholder="Yordamchi ustoz tayinlang...."/>
                <FilterCustom API={"/rooms"} filterId={roomId} setFilterId={setRoomId} setFilterName={setRoomName} placeholder={"Xona tayinlang...."} extraClass={"!w-full"}/>
                <DatePicker onChange={(a,b)=> setCreatedAt(b)} size='large'  defaultValue={dayjs(createdAt, dateFormat)}/>
