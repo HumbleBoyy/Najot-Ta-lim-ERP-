@@ -16,6 +16,7 @@ const Group = () => {
   const [groups, setGroups] = useState([])
   const navigate = useNavigate()
   const [teacherId, setTeacherId] = useState(null)
+  console.log(groups)
   const columns = [
     {
       title:"ID",
