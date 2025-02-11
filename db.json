@@ -377,16 +377,28 @@
       "roomId": "1"
     },
     {
-      "id": "2",
       "stackId": "2",
       "name": "Backend NodeJS N76",
-      "createdAt": "03.08.2024",
-      "status": false,
-      "mainTeacher": "Valijon Quvondiqov",
-      "teacherId": "0331",
-      "supportTeacher": "Isroil Omonjonov",
+      "mainTeacher": "Jahongir",
+      "status": true,
       "room": "Tesla",
-      "roomId": "5"
+      "roomId": "5",
+      "teacherId": "0381",
+      "createdAt": "03.08.2024",
+      "supportTeacher": "Isroil Omonjonov",
+      "id": "2"
+    },
+    {
+      "id": "6033",
+      "stackId": "1",
+      "name": "React JS S15",
+      "mainTeacher": "Asadbek",
+      "status": true,
+      "room": "Amazon",
+      "roomId": "1",
+      "teacherId": "9f7a",
+      "createdAt": "2025-02-11",
+      "supportTeacher": "Tom Jerry"
     }
   ],
   "students": [

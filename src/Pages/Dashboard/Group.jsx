@@ -6,7 +6,6 @@ import getRequest from '../../service/getRequest'
 import CustomTable from '../../Components/CustomTable'
 import { getGroups } from '../../service/getGroups'
 import FilterCustom from '../../Components/FilterCustom'
-import { PATH } from '../../hooks/usePath'
 
 const Group = () => {
   const {stackId} = useParams()
