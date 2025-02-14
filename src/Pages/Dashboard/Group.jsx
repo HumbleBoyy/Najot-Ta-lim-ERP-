@@ -9,7 +9,7 @@ import FilterCustom from '../../Components/FilterCustom'
 
 const Group = () => {
   const {stackId} = useParams()
-  const {name} = getRequest(`/stack/${stackId}`)
+  const {name} = getRequest(`/stackList/${stackId}`)
   const [isLoading, setIsLoading] = useState(false)
   const [refresh, setRefresh] = useState(false)
   const [groups, setGroups] = useState([])
