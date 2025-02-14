@@ -2,16 +2,18 @@ import React,{ useEffect } from "react"
 import { instance } from "../hooks/instance"
 import { MoreOutlined, QuestionOutlined } from "@ant-design/icons"
 import { Link, useNavigate } from "react-router-dom"
+import { Switch } from "antd"
 
 
-export const getStudents = (groupId, refresh, setStudents) => {
+export const getStudents = (groupId,  refresh,  setStudents, stackId) => {
   const navigate = useNavigate()
+
     useEffect(()=> {
         instance().get("/students", {
-          params:{groupId}
+          params:{groupId, stackId}
         }).then(res => {
-            setStudents( res.data.map((item, index) => {
-              item.key = index + 1
+            setStudents(res.data.map((item, index) => {
+              item.key = index + 1;
               item.name = item.name ? item.name : <QuestionOutlined />
               item.number = <Link to={`tel:${item.number}`} className="!text-black hover:!text-blue-600">{item.number}</Link>
               item.status = item.status ? "Faol" : "Faol emas"
@@ -21,5 +23,5 @@ export const getStudents = (groupId, refresh, setStudents) => {
               return item
             }))
         })
-    },[refresh, groupId])
+    },[refresh, groupId, stackId])
 }

@@ -15,7 +15,7 @@ const TeachersCrud = () => {
   const navigate = useNavigate()
 
   const [name, setName] = useState(null)
-  const [surName, setSureName] = useState(null)
+  const [surName, setSurName] = useState(null)
   const [age, setAge] = useState(null)
   const [experience, setExperience] = useState(null)
   const [email, setEmail] = useState(null)
@@ -58,7 +58,6 @@ const TeachersCrud = () => {
     }
   }
 
-  console.log(singleData)
   // Edit Part Update
   useEffect(()=> {
      if(singleData){
@@ -94,7 +93,7 @@ const TeachersCrud = () => {
       <div className='flex  justify-around mt-10'>
             <div className='flex flex-col w-[40%] gap-5'>
                <Input allowClear type='text' value={name} onChange={(e)=> setName(e.target.value)} required size='large' placeholder="Ism kiriting..."/>
-               <Input allowClear type='text' value={surName} onChange={(e)=> setSureName(e.target.value)} required size='large' placeholder="Familiya kiriting..."/>
+               <Input allowClear type='text' value={surName} onChange={(e)=> setSurName(e.target.value)} required size='large' placeholder="Familiya kiriting..."/>
                <Input allowClear type='number' value={age} onChange={(e)=> setAge(e.target.value)} required size='large' placeholder="Yosh kiriting..."/>
                <Input allowClear type='text' value={experience} onChange={(e)=> setExperience(e.target.value)} required size='large' placeholder="Tajriba kiriting..."/>
                <Input allowClear type='email' value={email} onChange={(e)=> setEmail(e.target.value)} required size='large' placeholder="Email kiriting..."/>

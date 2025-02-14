@@ -9,7 +9,7 @@ const cardContent = (navigate, id) => {
   return(
     <>
          <div className='flex items-center gap-2'>
-             <Button type='primary' className='hover:!text-white' size='large'><EditFilled/>Tahrirlash</Button>
+             <Button onClick={()=> navigate(`edit/${id}`)} type='primary' className='hover:!text-white' size='large'><EditFilled/>Tahrirlash</Button>
              <Button onClick={()=> navigate(`${id}`)} type='primary' className='hover:!text-white' size='large'><InfoCircleFilled/>Batafsil</Button>
          </div>
     </>
@@ -22,7 +22,7 @@ const Stack = () => {
   const navigate = useNavigate()
   return (
     <div className='p-5'>
-      <Caption iconBtn={<AppstoreAddOutlined />} count={5}/>
+      <Caption iconBtn={<AppstoreAddOutlined />} addLink={"add"} count={5}/>
       <ul className='flex  flex-wrap gap-5 mt-10'>
         {stackList.map(item => (
             <Card

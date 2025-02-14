@@ -71,7 +71,7 @@ const Group = () => {
       <Button onClick={()=> navigate(-1)} size='middle' className='border-none mt-2'><ArrowLeftOutlined/></Button>
        <div className='flex flex-col'>
          <h2 className='font-bold text-[25px] mb-1'>{name}</h2>
-         <p className='text-[15px] text-slate-400 lowercase'>Guruxlar 10-ta</p>
+         <p className='text-[15px] text-slate-400 lowercase'>Guruhlar {groups.length}-ta</p>
        </div>
       </div>
        <Button onClick={()=> navigate(`add`)} htmlType='button' size='large' type='primary' icon={<UsergroupAddOutlined/>} className='!addBtn hover:!text-white'>Qo'shish</Button>

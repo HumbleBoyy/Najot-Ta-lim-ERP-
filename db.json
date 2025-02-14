@@ -338,9 +338,9 @@
       "image": "https://media.gettyimages.com/id/1422276740/vector/software-developer-flat-design.jpg?s=612x612&w=gi&k=20&c=nAeiHldWvLHV-S4CRv5BsRtwH2PlS7t7Dynol9npglE="
     },
     {
-      "id": "3",
-      "name": "Full Stack",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
+      "name": "Full-Stack",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s",
+      "id": "3"
     },
     {
       "id": "4",
@@ -354,13 +354,23 @@
     },
     {
       "id": "6",
+      "name": "Foundation",
+      "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
+    },
+    {
+      "id": "7",
       "name": "Java",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyYYAhEoXWOcyx0sjHiaK2TrmUNxxMJdE6g&s"
     },
     {
-      "id": "7",
-      "name": "Foundation",
-      "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
+      "name": "Machine Learning",
+      "image": "https://blog.bismart.com/hubfs/Imported_Blog_Media/20190903-MachineLearning-Sep-26-2023-09-20-58-8538-AM.jpg",
+      "id": "8"
+    },
+    {
+      "id": "9",
+      "name": "NEW SMM",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGOr_yWyT9PF9TQlpvNAkfycRIuIjYBZiFA&s"
     }
   ],
   "groups": [
@@ -399,25 +409,21 @@
       "teacherId": "9f7a",
       "createdAt": "2025-02-11",
       "supportTeacher": "Tom Jerry"
+    },
+    {
+      "id": "5e6b",
+      "stackId": "1",
+      "name": "SMM N77",
+      "mainTeacher": "Asadbek",
+      "status": true,
+      "room": "Google",
+      "roomId": "2",
+      "teacherId": "9f7a",
+      "createdAt": "2025-02-19",
+      "supportTeacher": "Kimdir "
     }
   ],
   "students": [
-    {
-      "id": "1",
-      "studentId": "56178",
-      "name": "Jahongirbek",
-      "surname": "Karimov",
-      "age": "18",
-      "number": "+998907564563",
-      "region": "Sirdaryo",
-      "district": "Guliston",
-      "regionId": "5",
-      "email": "jahon@gmail.com",
-      "study": "Oxford",
-      "status": true,
-      "groupId": "1",
-      "stackId": "1"
-    },
     {
       "id": "2",
       "studentId": "86578",
@@ -432,7 +438,29 @@
       "study": "Harvard",
       "status": true,
       "groupId": "2",
-      "stackId": "2"
+      "group": "Backend NodeJS N76",
+      "stackId": "2",
+      "stack": "Backend",
+      "gender": "Erkak"
+    },
+    {
+      "id": "a8fe",
+      "name": "John",
+      "surname": "Jerry",
+      "age": "22",
+      "stack": "Frontend",
+      "stackId": "1",
+      "region": "Toshkent",
+      "regionId": "4",
+      "district": "Birjoy",
+      "group": "6033",
+      "studentId": "90101",
+      "gender": "Erkak",
+      "email": "john@gmail.com",
+      "number": "+998907564563",
+      "study": "Oxford",
+      "key": 3,
+      "status": false
     }
   ],
   "rooms": [

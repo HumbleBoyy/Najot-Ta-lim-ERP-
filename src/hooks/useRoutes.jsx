@@ -1,7 +1,8 @@
 import React from 'react'
 import { PATH } from './usePath'
-import { Group, GroupCrud, Home, Market, SingleGroup, Stack, Students, Teachers, TeachersCrud, TeachersMore } from '../Pages/Dashboard'
+import { Group, GroupCrud, Home, Market, SingleGroup, Stack, StackCrud, Students, StudentsCrud, Teachers, TeachersCrud, TeachersMore } from '../Pages/Dashboard'
 import {AppstoreOutlined, HomeOutlined, ShoppingCartOutlined, UserAddOutlined, UsergroupAddOutlined, WindowsOutlined } from '@ant-design/icons'
+import StudentsMore from '../Pages/Dashboard/StudentsMore'
 
 export const navbarRoutesList = [
     {
@@ -101,5 +102,30 @@ export const dashboardRoutesList = [
         id:12,
         path:PATH.groupMore,
         element:<SingleGroup/>,
+    },
+    {
+        id:13,
+        path:PATH.studentsAdd,
+        element:<StudentsCrud/>,
+    },
+    {
+        id:14,
+        path:PATH.studentsEdit,
+        element:<StudentsCrud/>,
+    },
+    {
+        id:15,
+        path:PATH.studentsMore,
+        element:<StudentsMore/>,
+    },
+    {
+        id:16,
+        path:PATH.stackAdd,
+        element:<StackCrud/>,
+    },
+    {
+        id:17,
+        path:PATH.stackEdit,
+        element:<StackCrud/>,
     },
 ]

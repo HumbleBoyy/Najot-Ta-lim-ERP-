@@ -8,6 +8,8 @@ import TeachersMore from "./TeachersMore"
 import Stack from "./Stack"
 import GroupCrud from "./GroupCrud"
 import SingleGroup from "./SingleGroup"
+import StudentsCrud from "./StudentsCrud"
+import StackCrud from "./StackCrud"
 export {
     Home,
     Group,
@@ -18,5 +20,7 @@ export {
     TeachersMore,
     Stack,
     GroupCrud,
-    SingleGroup
+    SingleGroup,
+    StudentsCrud,
+    StackCrud
 }

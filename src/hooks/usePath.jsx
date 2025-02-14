@@ -5,7 +5,12 @@ export const PATH = {
     teachersMore:"/teachers/:id",
     teachersEdit:"/teachers/:id/edit",
     stack:"/stack",
+    stackAdd:"/stack/add",
+    stackEdit:"/stack/edit/:stackId",
     students:"/students",
+    studentsAdd:"/students/add",
+    studentsEdit:"/students/:id/edit",
+    studentsMore:"/students/:id",
     market:"/market",
     
     group:"/stack/:stackId",
